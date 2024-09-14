@@ -1,0 +1,17 @@
+<div class="container-fluid bg-main py-5" [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+  <div class="container row justify-content-center align-items-center mx-auto  mt-5">
+    <h3 class="text-center">{{ book.name }}</h3>
+    <div class=" col-md-6 col-12">
+      <img class="book-image mb-3 " [src]="book.image" alt="{{book.name}}" *ngIf="book.image">
+    </div>
+    <div class="col-12 d-flex flex-column justify-content-start align-items-start" [attr.dir]="dir">
+      <div>
+      
+      
+      <p *ngFor="let point of book.description" class="lead">{{ point }}</p>
+    </div>
+  </div>
+  
+    
+  </div>
+</div>

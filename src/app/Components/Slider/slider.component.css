@@ -1,0 +1,64 @@
+.carousel-item {
+    display: flex;
+    flex-direction: row; /* Default to row layout for larger screens */
+    align-items: center;
+    width: 100%;
+    padding: 0 15px; /* Adjust padding as needed */
+}
+
+.carousel-item img {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-item .text {
+   
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+[dir="rtl"] .carousel-item {
+    flex-direction: row-reverse; /* Reverse direction for RTL languages */
+}
+[dir="rtl"] .text p {
+text-align: right;
+}
+
+h3,p,.color
+{color: #ffffff}
+/* Media Query for small screens */
+@media (max-width: 767px) {
+    .carousel-item {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        text-align: center; /* Center text on small screens */
+        margin-top: 200px; /* Adjust this value based on your navbar height */
+    }
+
+    .carousel-item img {
+        /* Ensure image fits within the container */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .carousel-item .text {
+        max-width: 100%; /* Ensure text takes full width */
+        padding: 15px; /* Add padding if needed */
+        overflow-wrap: break-word;
+    }
+ h3 {
+        font-size: 1.4rem; /* Adjust font size */
+    }
+    
+  p {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    [dir="rtl"] .carousel-item {
+        flex-direction: column; /* Reverse direction for RTL languages */
+    }
+   
+}
+

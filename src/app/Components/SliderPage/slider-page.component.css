@@ -1,0 +1,30 @@
+/* CSS for text alignment based on direction */
+[dir="rtl"] .lead {
+    text-align: right;
+  }
+  
+  [dir="ltr"] .lead {
+    text-align: left;
+  }
+.container
+{
+    width: 85%;
+}
+
+
+
+.book-image {
+  display: block; /* Ensure the image is treated as a block element */
+  max-width: 100%; /* Ensure the image does not exceed its natural size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+        .container{
+          width:100%;
+          margin: 0;
+          padding: 0;
+        }
+
+    }

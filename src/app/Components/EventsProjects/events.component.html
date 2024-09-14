@@ -1,0 +1,64 @@
+<section class="header-section " id="first-section">
+    <div class="background-container d-flex align-items-center justify-content-center pb-3"[attr.dir]="language === 'ar' ? 'rtl' : 'ltr'" id="background">
+      <div class="overlay d-flex flex-column align-items-center justify-content-center {{ language === 'en' ? 'english' : 'arabic' }}">
+      
+       
+        <h2 class="text-center text-main fw-bold mb-3 ">{{ 'PROTOCOLS.NAME' | translate }}</h2>
+  
+        
+      </div>
+  </div>
+  </section> 
+  <div class="container-fluid bg-main py-5 " [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+    <div class="container">
+      <a [routerLink]="['/details', 1]">
+        <div class="row">
+          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <img src="./assets/Images/slider.png" alt="Image 3" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+            <h3>{{ 'SLIDER_TEXT.SLIDER1_TEXT.TITLE' | translate }}</h3>
+            <p class="lead h6 mb-3">{{ 'SLIDER_TEXT.SLIDER1_TEXT.DETAILS.SUMMARY' | translate }}</p>
+
+          </div>
+        </div>
+        <a [routerLink]="['/details', 1]" class="d-flex justify-content-center"> <button class="btn btn-primary ">{{'READ_MORE' | translate}}</button></a>
+
+      </a>
+    </div>
+    <!-- <div class="container">
+      <a [routerLink]="['/details', 2]">
+        <div class="d-flex ">
+          <div class=" col-md-6 col-12  d-flex flex-column justify-content-center align-items-center">
+            <h3>{{'SLIDER_TITLE.TITLE2' | translate}}</h3>
+            <p class="lead h6 mt-3">{{'SLIDER_DESCRIPTION.DESCRIPTION2' | translate}}</p>
+  
+          </div>
+          <div class="col-md-6 col-12 ">
+            <img src="./assets/Images/slider.png" alt="Image 2" class="img-fluid ">
+  
+          </div>
+        </div>
+        <a [routerLink]="['/details', 2]" class="d-flex justify-content-center"> <button class="btn btn-primary ">{{'READ_MORE' | translate}}</button></a>
+
+      </a>
+    </div>
+    <div class="container">
+      <a [routerLink]="['/details', 3]">
+        <div class="d-flex ">
+          <div class=" col-md-6 col-12  d-flex flex-column justify-content-center align-items-center">
+            <h3>{{'SLIDER_TITLE.TITLE3' | translate}}</h3>
+            <p class="lead h6 mt-3">{{'SLIDER_DESCRIPTION.DESCRIPTION3' | translate}}</p>
+  
+          </div>
+          <div class="col-md-6 col-12 ">
+            <img src="./assets/Images/slider.png" alt="Image 3" class="img-fluid ">
+  
+          </div>
+        </div>
+        <a [routerLink]="['/details', 3]" class="d-flex justify-content-center"> <button class="btn btn-primary ">{{'READ_MORE' | translate}}</button></a>
+
+      </a>
+    </div> -->
+   
+</div>

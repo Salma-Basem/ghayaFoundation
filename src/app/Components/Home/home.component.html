@@ -1,0 +1,32 @@
+<!--Home Component-->
+<section class="header-section" id="first-section">
+  <div class="background-container d-flex align-items-center justify-content-center pb-3" [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'" id="background">
+    <div class="overlay d-flex  align-items-center justify-content-center {{ language === 'en' ? 'english' : 'arabic' }}">
+  
+      <app-slider></app-slider>
+    </div>
+  </div>
+</section>
+
+<main>
+   
+<app-projects></app-projects>
+<app-awards-card></app-awards-card>
+
+<div class="container mt-5 mx-auto">
+  <div class="video-wrapper">
+    <iframe id="videoIframe" width="560" height="315" 
+            src="https://www.youtube.com/embed/qTp2ww8EIGs?loop=1&playlist=qTp2ww8EIGs&si=l0JoT0tRURIUEBFr" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<app-members-card></app-members-card>
+
+</main>
+
+

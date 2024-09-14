@@ -1,0 +1,61 @@
+<p>contact-us works!</p>
+<div class="container-fluid bg-main py-5 mt-5" [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+   
+    <div class="container py-5">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h2 class="text-main">{{ language === 'ar' ? 'اتصل بنا' : 'Contact Us' }}</h2>
+        </div>
+    
+        <div class="col-md-6 col-12 d-flex flex-column align-items-start">
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-baseline mb-2">
+              <i class="fa-solid fa-location-dot text-main me-2"></i>
+              <div class="text-main h4 mb-0" [innerHTML]="'LOCATION' | translate | newlineToBr"></div>
+            </div>
+            <div class="text-main h5" [innerHTML]="'ADDRESS' | translate | newlineToBr"></div>
+          </div>
+    
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-baseline mb-2">
+              <i class="fa-solid fa-phone text-main me-2"></i>
+              <span class="text-main h4 mb-0" [innerHTML]="'MOBILE_PHONE' | translate | newlineToBr"></span>
+            </div>
+            <div class="text-main h5" [innerHTML]="'MOBILE_VALUE' | translate | newlineToBr"></div>
+          </div>
+    
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-baseline mb-2">
+              <i class="fa-solid fa-globe text-main me-2"></i>
+              <span class="text-main h4 mb-0" [innerHTML]="'WEBSITE' | translate | newlineToBr"></span>
+            </div>
+            <a routerLink="Home" routerLinkActive="router-link-active" class="cursor-pointer h5" (click)="goToWebsite()">www.ghayaeg.com</a>
+          </div>
+    
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-baseline mb-2">
+              <i class="fa-solid fa-circle-info text-main me-2"></i>
+              <span class="text-main h4 mb-0" [innerHTML]="'MEDIA_CONTACT' | translate | newlineToBr"></span>
+            </div>
+            <a routerLink="Home" routerLinkActive="router-link-active" class="cursor-pointer h5" (click)="goToMediaContact()">media&#64;ghayaeg.com</a>
+          </div>
+    
+          <div class="contact-info mb-4">
+            <div class="d-flex align-items-baseline mb-2">
+              <i class="fa-solid fa-envelope text-main me-2"></i>
+              <span class="text-main h4 mb-0" [innerHTML]="'GENERAL_MAIL' | translate | newlineToBr"></span>
+            </div>
+            <a routerLink="Home" routerLinkActive="router-link-active" class="cursor-pointer h5" (click)="goToGeneralMail()">info&#64;ghayaeg.com</a>
+          </div>
+        </div>
+    
+     
+        <div class="col-md-6 col-12">
+          <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.339880710379!2d31.2977917!3d30.0128947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839007db07df5%3A0x4e9ce7fb17d64a37!2z2YXYpNiz2LPYqSDYutin2YrYpyDZhNmE2KXYqNiv2KfYuQ!5e0!3m2!1sen!2seg!4v1726114975762!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+        </div>

@@ -1,0 +1,73 @@
+  <div class="container-fluid  py-5 " [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+    <div class="container">
+      <a [routerLink]="['/details', 1]">
+        <div class="row">
+          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <img src="./assets/Images/slider.png" alt="Image 3" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+            <h3>{{ 'SLIDER_TEXT.SLIDER1_TEXT.TITLE' | translate }}</h3>
+            <p class="lead h6 mb-3">{{ 'SLIDER_TEXT.SLIDER1_TEXT.DETAILS.SUMMARY' | translate }}</p>
+            <a [routerLink]="['/details', 1]" class=""> <button class="btn btn-primary ">{{'READ_MORE' | translate}}</button></a>
+
+          </div>
+        </div>
+      </a>
+    </div>
+    
+
+    <!-- Carousel -->
+    <!-- <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <a [routerLink]="['/details', 1]">
+          <div class="carousel-item">
+            <img src="./assets/Images/slider.png" alt="Image 1" class="img-fluid w-75">
+            <div class="text">
+              <h3 class="">{{'SLIDER_TEXT.SLIDER1_TEXT.TITLE' | translate}}</h3>
+              <p class="lead h6 ">{{'SLIDER_TEXT.SLIDER1_TEXT.DETAILS.SUMMARY' | translate}}</p>
+              <a [routerLink]="['/details', 1]"> <button class="btn btn-primary p-1 mt-1">{{'READ_MORE' | translate}}</button></a>
+
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a [routerLink]="['/details', 2]">
+          <div class="carousel-item ">
+            <img src="./assets/Images/slider.png" alt="Image 2" class="img-fluid w-75">
+            <div class="text">
+              <h3>{{'SLIDER_TITLE.TITLE1' | translate}}</h3>
+              <p class="lead h6">{{'SLIDER_DESCRIPTION.DESCRIPTION2' | translate}}</p>
+              <a [routerLink]="['/details', 2]"> <button class="btn btn-primary p-1 mt-1">{{'READ_MORE' | translate}}</button></a>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a [routerLink]="['/details', 3]">
+          <div class="carousel-item">
+            <img src="./assets/Images/slider.png" alt="Image 3" class="img-fluid w-75">
+            <div class="text">
+              <h3>{{'SLIDER_TITLE.TITLE3' | translate}}</h3>
+              <p class="lead h6">{{'SLIDER_DESCRIPTION.DESCRIPTION3' | translate}}</p>
+              <a [routerLink]="['/details', 3]"> <button class="btn btn-primary p-1 mt-1">{{'READ_MORE' | translate}}</button></a>
+
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a [routerLink]="['/details', 4]">
+          <div class="carousel-item">
+            <img src="./assets/Images/slider.png" alt="Image 4" class="img-fluid w-75">
+            <div class="text">
+              <h3>{{'SLIDER_TITLE.TITLE4' | translate}}</h3>
+              <p class="lead h6">{{'SLIDER_DESCRIPTION.DESCRIPTION4' | translate}}</p>
+              <a [routerLink]="['/details', 4]"> <button class="btn btn-primary p-1 mt-1">{{'READ_MORE' | translate}}</button></a>
+
+            </div>
+          </div>
+        </a>
+      </ng-template>
+    </owl-carousel-o> -->
+</div>
